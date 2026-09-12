@@ -1,0 +1,153 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@source "../public";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Design system — Dama do Corte brand identity.
+ *
+ * Colors: elegant black #111111, soft gold #C9A96A, sand beige #E8DCC6,
+ * natural wood #886F4E.
+ *
+ * Typography: Playfair Display (headings), Montserrat (body).
+ */
+
+@theme inline {
+  --font-display: "Playfair Display", serif;
+  --font-sans: "Montserrat", sans-serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Brand tokens */
+  --color-gold: var(--gold);
+  --color-gold-foreground: var(--gold-foreground);
+  --color-gold-soft: var(--gold-soft);
+  --color-sand: var(--sand);
+  --color-wood: var(--wood);
+  --color-black: var(--black);
+}
+
+:root {
+  --radius: 0.75rem;
+
+  /* Brand primitives — light theme (default): warm, luminous, sand-based */
+  --black: oklch(0.24 0.006 60);
+  --gold: oklch(0.62 0.088 78);
+  --gold-foreground: oklch(0.99 0.004 90);
+  --gold-soft: oklch(0.72 0.1 80);
+  --sand: oklch(0.94 0.02 88);
+  --wood: oklch(0.55 0.075 78);
+
+  --background: oklch(0.98 0.008 90);
+  --foreground: oklch(0.26 0.008 60);
+  --card: oklch(0.955 0.016 88);
+  --card-foreground: oklch(0.26 0.008 60);
+  --popover: oklch(0.98 0.008 90);
+  --popover-foreground: oklch(0.26 0.008 60);
+  --primary: var(--gold);
+  --primary-foreground: oklch(0.99 0.004 90);
+  --secondary: var(--wood);
+  --secondary-foreground: oklch(0.99 0.004 90);
+  --muted: oklch(0.93 0.018 88);
+  --muted-foreground: oklch(0.46 0.02 70);
+  --accent: oklch(0.91 0.03 85);
+  --accent-foreground: oklch(0.26 0.008 60);
+  --destructive: oklch(0.57 0.19 27);
+  --destructive-foreground: oklch(0.98 0.003 247);
+  --border: oklch(0.55 0.075 78 / 0.24);
+  --input: oklch(0.24 0.006 60 / 0.12);
+  --ring: var(--gold);
+}
+
+.dark {
+  /* Dark theme — elegant black with soft gold */
+  --black: oklch(0.19 0 0);
+  --gold: oklch(0.78 0.1 82);
+  --gold-foreground: oklch(0.19 0 0);
+  --gold-soft: oklch(0.7 0.09 80);
+  --sand: oklch(0.92 0.025 90);
+  --wood: oklch(0.55 0.08 80);
+
+  --background: oklch(0.19 0 0);
+  --foreground: oklch(0.97 0.008 95);
+  --card: oklch(0.245 0.008 60);
+  --card-foreground: oklch(0.97 0.008 95);
+  --popover: oklch(0.245 0.008 60);
+  --popover-foreground: oklch(0.97 0.008 95);
+  --primary: var(--gold);
+  --primary-foreground: oklch(0.19 0 0);
+  --secondary: var(--wood);
+  --secondary-foreground: oklch(0.97 0.008 95);
+  --muted: oklch(0.27 0.008 60);
+  --muted-foreground: oklch(0.78 0.018 90);
+  --accent: oklch(0.3 0.02 80);
+  --accent-foreground: oklch(0.97 0.008 95);
+  --destructive: oklch(0.57 0.19 27);
+  --destructive-foreground: oklch(0.98 0.003 247);
+  --border: oklch(0.78 0.1 82 / 0.22);
+  --input: oklch(1 0 0 / 0.12);
+  --ring: var(--gold);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+@utility gold-gradient {
+  background-image: linear-gradient(135deg, var(--color-gold) 0%, var(--color-sand) 100%);
+}
+
+@utility wood-gradient {
+  background-image: linear-gradient(180deg, oklch(0.45 0.08 80) 0%, var(--color-wood) 100%);
+}
