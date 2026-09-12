@@ -14,7 +14,7 @@ import {
   X,
 } from "lucide-react";
 
-import heroImg from "../assets/hero.jpg";
+import heroImg from "../assets/hero.png";
 import mundoDosDadosLogo from "../assets/mundo-dos-dados-logo.png";
 import { ThemeToggle } from "../components/theme-toggle";
 import { FloatingScheduleButton, useCalendlyPopup } from "../components/calendly-widget";

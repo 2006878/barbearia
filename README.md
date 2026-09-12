@@ -1,29 +1,37 @@
-# Welcome to your Lovable project
+# Dama do Corte — Barbearia & Estúdio
 
-This project was built with [Lovable](https://lovable.dev).
+Landing page da **Dama do Corte**, barbearia e estúdio em Passos, MG. O site apresenta a barbearia, os serviços oferecidos (cortes, barba, tranças, cabelo afro e sobrancelhas) e os canais de contato, com foco em conversão via WhatsApp e agendamento online.
 
-## Build with Lovable
+## Funcionalidades
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+- Seções de serviços, sobre e valores da barbearia
+- Botão flutuante e CTAs de agendamento via [Calendly](https://calendly.com)
+- Contato direto via WhatsApp
+- Alternância de tema claro/escuro
+- SEO: meta tags, Open Graph, Twitter Card e dados estruturados (JSON-LD) para negócio local
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+## Stack
 
-## Development
+- [TanStack Start](https://tanstack.com/start) (React + roteamento full-stack)
+- TypeScript
+- Tailwind CSS
+- Radix UI / componentes de UI reutilizáveis
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+## Desenvolvimento
+
+Requer Node.js e npm — [instale com nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
+git clone <url-deste-repositorio>
+cd barbearia
 npm i
 npm run dev
 ```
 
-## Built with
+## Scripts
 
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
+- `npm run dev` — inicia o servidor de desenvolvimento
+- `npm run build` — gera o build de produção
+- `npm run preview` — serve o build de produção localmente
+- `npm run lint` — roda o linter
+- `npm run format` — formata o código com Prettier
