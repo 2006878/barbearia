@@ -59,7 +59,7 @@ export const Route = createFileRoute("/")({
             addressRegion: "MG",
             addressCountry: "BR",
           },
-          sameAs: ["https://instagram.com/damadocorte"],
+          sameAs: ["https://www.damadocorte.com.br"],
           makesOffer: [
             "Corte de cabelo",
             "Barba",
@@ -359,7 +359,7 @@ function Index() {
 
           <div className="mt-6 flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground">
             <a
-              href="https://maps.google.com/?q=Dama+do+Corte"
+              href="https://maps.google.com/?q=passos+mg"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 transition-colors hover:text-gold"
@@ -377,7 +377,7 @@ function Index() {
               <span>(35) 99937-0627</span>
             </a>
             <a
-              href="https://instagram.com/damadocorte"
+              href="https://www.damadocorte.com.br"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 transition-colors hover:text-gold"
