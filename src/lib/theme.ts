@@ -26,9 +26,10 @@ export function applyTheme(theme: Theme) {
 }
 
 export function preferredTheme(): Theme {
-  return getStoredTheme() ??
-    (typeof window !== "undefined" &&
-    window.matchMedia?.("(prefers-color-scheme: dark)").matches
+  return (
+    getStoredTheme() ??
+    (typeof window !== "undefined" && window.matchMedia?.("(prefers-color-scheme: dark)").matches
       ? "dark"
-      : "light");
+      : "light")
+  );
 }
