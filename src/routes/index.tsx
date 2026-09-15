@@ -22,7 +22,7 @@ import { FloatingScheduleButton, useCalendlyPopup } from "../components/calendly
 const WHATSAPP_NUMBER = "5535999370627";
 const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Dama%20do%20Corte.`;
 
-const SITE_URL = "https://damadocorte.lovable.app";
+const SITE_URL = "https://www.damadocorte.com.br";
 const PAGE_TITLE = "Barbearia em Passos, MG | Dama do Corte — Barbearia & Estúdio";
 const PAGE_DESCRIPTION =
   "Barbearia e estúdio em Passos, MG: cortes, barba, tranças, cabelo afro e sobrancelhas com técnica, respeito e estilo. Agende pelo WhatsApp.";
