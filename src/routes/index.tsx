@@ -32,7 +32,10 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: PAGE_TITLE },
       { name: "description", content: PAGE_DESCRIPTION },
-      { name: "keywords", content: "barbearia Passos MG, tranças, cabelo afro, sobrancelhas, barba" },
+      {
+        name: "keywords",
+        content: "barbearia Passos MG, tranças, cabelo afro, sobrancelhas, barba",
+      },
       { property: "og:title", content: PAGE_TITLE },
       { property: "og:description", content: PAGE_DESCRIPTION },
       { property: "og:type", content: "website" },
@@ -84,7 +87,6 @@ function Index() {
     { label: "Valores", href: "#valores" },
     { label: "Contato", href: "#contato" },
   ];
-
 
   return (
     <div className="min-h-screen bg-background text-foreground antialiased">
@@ -179,9 +181,9 @@ function Index() {
             </p>
 
             <p className="mx-auto mt-5 max-w-md text-balance text-sm leading-relaxed text-muted-foreground sm:text-base">
-              Mais que um salão. Um espaço de cuidado, autoestima e expressão. Aqui,
-              homens e mulheres encontram serviços de barbearia, tranças, cabelo afro e
-              sobrancelhas em um ambiente moderno, acolhedor e profissional.
+              Mais que um salão. Um espaço de cuidado, autoestima e expressão. Aqui, homens e
+              mulheres encontram serviços de barbearia, tranças, cabelo afro e sobrancelhas em um
+              ambiente moderno, acolhedor e profissional.
             </p>
 
             <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -269,13 +271,12 @@ function Index() {
               Sobre a Dama do Corte
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-balance text-sm leading-relaxed text-muted-foreground sm:text-base">
-              Nosso propósito é valorizar a sua melhor versão, com técnica, respeito e
-              estilo. Cada detalhe do espaço foi pensado para que você se sinta
-              acolhido, confiante e autêntico.
+              Nosso propósito é valorizar a sua melhor versão, com técnica, respeito e estilo. Cada
+              detalhe do espaço foi pensado para que você se sinta acolhido, confiante e autêntico.
             </p>
             <p className="mx-auto mt-3 max-w-xl text-balance text-xs leading-relaxed text-muted-foreground/80 sm:text-sm">
-              Beleza real, força e confiança, diversidade, modernidade, conforto,
-              profissionalismo e autenticidade. Esse é o nosso jeito de cuidar de você.
+              Beleza real, força e confiança, diversidade, modernidade, conforto, profissionalismo e
+              autenticidade. Esse é o nosso jeito de cuidar de você.
             </p>
           </div>
         </section>
@@ -313,8 +314,8 @@ function Index() {
                   Pronto para se sentir na sua melhor versão?
                 </h2>
                 <p className="mx-auto mt-3 max-w-md text-sm text-muted-foreground sm:text-base">
-                  Fale conosco pelo WhatsApp ou aguarde o agendamento online, que está
-                  chegando em breve.
+                  Fale conosco pelo WhatsApp ou aguarde o agendamento online, que está chegando em
+                  breve.
                 </p>
                 <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
                   <a
@@ -406,8 +407,7 @@ function Index() {
               decoding="async"
             />
             <span>
-              Desenvolvido por{" "}
-              <span className="underline">Mundo dos Dados</span>
+              Desenvolvido por <span className="underline">Mundo dos Dados</span>
             </span>
           </a>
         </div>
