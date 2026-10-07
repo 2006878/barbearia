@@ -5,7 +5,7 @@ Landing page da **Dama do Corte**, barbearia e estúdio em Passos, MG. O site ap
 ## Funcionalidades
 
 - Seções de serviços, sobre e valores da barbearia
-- Botão flutuante e CTAs de agendamento via [Calendly](https://calendly.com)
+- Botão flutuante e CTAs de agendamento via [Jim](https://jim.com/a/alciene-maria)
 - Contato direto via WhatsApp
 - Alternância de tema claro/escuro
 - SEO: meta tags, Open Graph, Twitter Card e dados estruturados (JSON-LD) para negócio local

@@ -1,51 +1,11 @@
-import { useEffect, useRef, useCallback } from "react";
+import { useCallback } from "react";
 import { CalendarClock } from "lucide-react";
 
-const CALENDLY_URL = "https://calendly.com/damadocorte";
-
-declare global {
-  interface Window {
-    Calendly?: {
-      initPopupWidget: (config: { url: string }) => void;
-      closePopupWidget: () => void;
-    };
-  }
-}
-
-export function CalendlyWidget() {
-  const initializedRef = useRef(false);
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    if (initializedRef.current) return;
-    if (document.querySelector('script[data-calendly="true"]')) {
-      initializedRef.current = true;
-      return;
-    }
-
-    const link = document.createElement("link");
-    link.href = "https://assets.calendly.com/assets/external/widget.css";
-    link.rel = "stylesheet";
-    document.head.appendChild(link);
-
-    const script = document.createElement("script");
-    script.src = "https://assets.calendly.com/assets/external/widget.js";
-    script.async = true;
-    script.dataset["calendly"] = "true";
-    document.body.appendChild(script);
-    initializedRef.current = true;
-  }, []);
-
-  return null;
-}
+const SCHEDULING_URL = "https://jim.com/a/alciene-maria";
 
 export function useCalendlyPopup() {
   const openPopup = useCallback(() => {
-    if (typeof window !== "undefined" && window.Calendly) {
-      window.Calendly.initPopupWidget({ url: CALENDLY_URL });
-    } else {
-      window.open(CALENDLY_URL, "_blank", "noopener,noreferrer");
-    }
+    window.open(SCHEDULING_URL, "_blank", "noopener,noreferrer");
   }, []);
 
   return openPopup;

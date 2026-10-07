@@ -8,4 +8,5 @@
 - [x] Link de agendamento (Calendly de teste)
 - [x] Widget popup Calendly oficial (https://calendly.com/damadocorte)
 - [x] Remover branding "powered by Calendly" e usar botão flutuante próprio
+- [x] Substituir Calendly pelo link de agendamento do Jim (https://jim.com/a/alciene-maria)
 - [x] Inscrição "desenvolvido por Mundo dos Dados" no rodapé com link LinkedIn
