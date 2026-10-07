@@ -35,3 +35,6 @@ npm run dev
 - `npm run preview` — serve o build de produção localmente
 - `npm run lint` — roda o linter
 - `npm run format` — formata o código com Prettier
+
+
+### Tairone Amaral
